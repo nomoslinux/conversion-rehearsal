@@ -1,0 +1,9 @@
+name: hello
+on: [pull_request]
+permissions:
+  contents: read
+jobs:
+  hello:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "synthetic rehearsal job"
